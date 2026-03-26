@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alrededor de los EE. UU.</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <header class="header">
+        <p class="header__logo-text">
+          Alrededor
+          <span class="header__logo-accent">de los EE. UU.</span>
+        </p>
+      </header>
+
+      <main class="content">
+        <section class="profile">
+          <img
+            class="profile__image"
+            src="https://randomuser.me/api/portraits/men/75.jpg"
+            alt="Jacques Cousteau"
+          />
+
+          <div class="profile__info">
+            <div class="profile__title-container">
+              <h1 class="profile__name">Jacques Cousteau</h1>
+              <button
+                class="profile__edit-button"
+                type="button"
+                aria-label="Editar perfil"
+              ></button>
+            </div>
+
+            <p class="profile__about">Explorador</p>
+          </div>
+
+          <button
+            class="profile__add-button"
+            type="button"
+            aria-label="Agregar tarjeta"
+          ></button>
+        </section>
+
+        <section class="elements">
+          <ul class="elements__list">
+            <li class="card">
+              <img
+                class="card__image"
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=80"
+                alt="Valle de Yosemite"
+              />
+              <button
+                class="card__delete-button"
+                type="button"
+                aria-label="Eliminar tarjeta"
+              ></button>
+              <div class="card__description">
+                <h2 class="card__title">Valle de Yosemite</h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="Me gusta"
+                ></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80"
+                alt="Lago Louise"
+              />
+              <button
+                class="card__delete-button"
+                type="button"
+                aria-label="Eliminar tarjeta"
+              ></button>
+              <div class="card__description">
+                <h2 class="card__title">Lago Louise</h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="Me gusta"
+                ></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
+                alt="Montañas Calvas"
+              />
+              <button
+                class="card__delete-button"
+                type="button"
+                aria-label="Eliminar tarjeta"
+              ></button>
+              <div class="card__description">
+                <h2 class="card__title">Montañas Calvas</h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="Me gusta"
+                ></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80"
+                alt="Latemar"
+              />
+              <button
+                class="card__delete-button"
+                type="button"
+                aria-label="Eliminar tarjeta"
+              ></button>
+              <div class="card__description">
+                <h2 class="card__title">Latemar</h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="Me gusta"
+                ></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=800&q=80"
+                alt="Parque Nacional de la Vanoise"
+              />
+              <button
+                class="card__delete-button"
+                type="button"
+                aria-label="Eliminar tarjeta"
+              ></button>
+              <div class="card__description">
+                <h2 class="card__title">Parque Nacional de la Vanoise</h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="Me gusta"
+                ></button>
+              </div>
+            </li>
+
+            <li class="card">
+              <img
+                class="card__image"
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80"
+                alt="Lago di Braies"
+              />
+              <button
+                class="card__delete-button"
+                type="button"
+                aria-label="Eliminar tarjeta"
+              ></button>
+              <div class="card__description">
+                <h2 class="card__title">Lago di Braies</h2>
+                <button
+                  class="card__like-button"
+                  type="button"
+                  aria-label="Me gusta"
+                ></button>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p class="footer__copyright">© 2026</p>
+      </footer>
+    </div>
+
+    <div class="popup" id="popup-edit">
+      <div class="popup__container">
+        <button class="popup__close" type="button" aria-label="Cerrar"></button>
+
+        <h2 class="popup__title">Editar perfil</h2>
+
+        <form class="popup__form" name="edit-profile">
+          <input
+            class="popup__input popup__input_type_name"
+            type="text"
+            name="name"
+            placeholder="Nombre"
+            required
+          />
+          <input
+            class="popup__input popup__input_type_about"
+            type="text"
+            name="about"
+            placeholder="Acerca de mí"
+            required
+          />
+          <button class="popup__save" type="submit">Guardar</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="popup" id="popup-add">
+      <div class="popup__container">
+        <button
+          class="popup__close popup__close_type_add"
+          type="button"
+          aria-label="Cerrar"
+        ></button>
+
+        <h2 class="popup__title">Nueva tarjeta</h2>
+
+        <form class="popup__form popup__form_type_add" name="new-place">
+          <input
+            class="popup__input popup__input_type_title"
+            type="text"
+            name="title"
+            placeholder="Título"
+            required
+          />
+          <input
+            class="popup__input popup__input_type_link"
+            type="url"
+            name="link"
+            placeholder="Enlace de la imagen"
+            required
+          />
+          <button class="popup__save" type="submit">Crear</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>

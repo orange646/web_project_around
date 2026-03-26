@@ -1,0 +1,32 @@
+.header {
+  padding: 45px 0 41px;
+  border-bottom: 1px solid rgba(84, 84, 84, 0.7);
+}
+
+.header__logo-text {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.header__logo-accent {
+  font-size: 16px;
+  vertical-align: top;
+  margin-left: 6px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 28px 0 32px;
+  }
+
+  .header__logo-text {
+    font-size: 32px;
+  }
+
+  .header__logo-accent {
+    font-size: 12px;
+    margin-left: 4px;
+  }
+}

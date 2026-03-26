@@ -1,0 +1,88 @@
+.card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #000;
+}
+
+.card__image {
+  width: 100%;
+  height: 282px;
+  object-fit: cover;
+  display: block;
+}
+
+.card__delete-button {
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  width: 18px;
+  height: 19px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+.card__delete-button::after {
+  content: "🗑";
+  font-size: 18px;
+  line-height: 1;
+}
+
+.card__delete-button:hover {
+  opacity: 0.6;
+}
+
+.card__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 20px 31px;
+}
+
+.card__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.2;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.card__like-button {
+  width: 22px;
+  height: 19px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__like-button::after {
+  content: "♡";
+  font-size: 24px;
+  color: #000;
+  line-height: 1;
+}
+
+.card__like-button_active::after {
+  content: "♥";
+  color: #000;
+}
+
+.card__like-button:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 620px) {
+  .card {
+    width: 282px;
+  }
+}
